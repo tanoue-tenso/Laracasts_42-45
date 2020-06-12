@@ -8,5 +8,7 @@
 </head>
 <body>
     <h1>It Works Again!</h1>
+
+    <p>It sounds like you want to hear more about {{ $topic }}.</p>
 </body>
 </html>

@@ -25,7 +25,7 @@ class ContactController extends Controller
         // });
 
         // memo: htmlやマークダウンで送る場合
-        Mail::to(request('email'))->send(new ContactMe());
+        Mail::to(request('email'))->send(new ContactMe('shirts'));
 
         return redirect('/contact')->with('message', 'Email sent!'); // with()でflashメッセージ定義
 
