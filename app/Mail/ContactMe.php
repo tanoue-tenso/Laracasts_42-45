@@ -30,7 +30,7 @@ class ContactMe extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.contact-me') // memo: ここに送りたいテンプレートが書かれたbladeを指定
+        return $this->markdown('emails.contact-me') // memo: ここに送りたいテンプレートが書かれたbladeを指定
                         ->subject('More information about ' . $this->topic);
     }
 }
