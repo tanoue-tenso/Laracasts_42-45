@@ -100,7 +100,7 @@ return [
     */
 
     'markdown' => [
-        'theme' => 'default',
+        'theme' => 'laracasts', // memo: カスタマイズしたcssファイルを適用
 
         'paths' => [
             resource_path('views/vendor/mail'),
